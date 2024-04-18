@@ -1,0 +1,120 @@
+/* *{ */
+    /* padding: 0px; */
+    /* margin: 0px; */
+    /* box-sizing: border-box; */
+    /* padding: 50px;  */
+    /* background: rgb(238,174,202); */
+/* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+/* } */
+
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#name{
+    color: rgb(86, 86, 136);
+    font-size: small;
+    position: relative;
+    top: -14px;
+}
+
+.main{
+    
+        background-color: white;
+        padding: 20px;
+        border: 2px solid rgb(156, 154, 154);
+        box-shadow: 0px 0px 100px rgba(43, 40, 40, 0.1);
+        width: 70%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        position: relative;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(156, 154, 154);
+}
+
+#im{
+    position: relative;
+    color:  rgb(92, 177, 180);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 98px;
+    left: 20px;
+    font-size: larger;
+}
+
+#f{
+    position: relative;
+    left: 20px;
+    top: 76px;
+    font-size: xxx-large;
+    font-family: system-ui;
+    color: rgb(92, 177, 180);
+}
+
+#full{
+    color: rgb(86, 86, 136);
+}
+img{
+    width: 200px;
+    position: relative;
+    float: right;
+    border-radius: 50%;
+    top: -134px;
+    right: 105px;
+    border: 6px solid rgba(168, 162, 221, 0.4);
+}
+.link{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: -264px;
+    left: 100px;
+    font-family: monospace;
+
+}
+a{
+    text-decoration: none;
+    /* position: relative; */
+    margin-right: 50px;
+    color: rgb(92, 177, 180);
+}
+a:hover{
+    color: rgb(13, 8, 30);
+}
+a.selected{
+    font-weight: bold;
+    color: rgb(13, 8, 30);
+}
+
+p{
+    position: relative;
+    left: 30px;
+    color: rgb(84, 82, 101);
+    font-family: monospace;
+    font-size: medium;
+    top: 19px;
+}
+
+#btn{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    right: -674px;
+    top: -356px;
+}
