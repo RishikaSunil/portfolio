@@ -1,18 +1,9 @@
-/* *{ */
-    /* padding: 0px; */
-    /* margin: 0px; */
-    /* box-sizing: border-box; */
-    /* padding: 50px;  */
-    /* background: rgb(238,174,202); */
-/* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-/* } */
 
 body{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 0px;
     margin: 0px;
-
 }
 
 #name{
@@ -35,6 +26,8 @@ body{
         margin-top: 50px;
         border-radius: 20px;
         position: relative;
+        /* display: flex;
+        flex-wrap: nowrap; */
 }
 
 .main::before {
@@ -68,13 +61,28 @@ body{
 #full{
     color: rgb(86, 86, 136);
 }
-img{
+p{
+    position: relative;
+    left: 30px;
+    color: rgb(84, 82, 101);
+    font-family: monospace;
+    font-size: medium;
+    top: 43px;
+}
+
+#img{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: end;
+}
+#pic{
     width: 200px;
     position: relative;
     float: right;
     border-radius: 50%;
-    top: -134px;
-    right: 105px;
+    top: -195px;
+    right: 115px;
     border: 6px solid rgba(168, 162, 221, 0.4);
 }
 .link{
@@ -82,17 +90,19 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    top: -264px;
-    left: 100px;
+    flex-wrap:wrap;
+    top: -514px;
+    left: 29px;
     font-family: monospace;
 
 }
-a{
+.link>a{
     text-decoration: none;
-    /* position: relative; */
     margin-right: 50px;
     color: rgb(92, 177, 180);
+    font-size: medium;
 }
+
 a:hover{
     color: rgb(13, 8, 30);
 }
@@ -101,20 +111,22 @@ a.selected{
     color: rgb(13, 8, 30);
 }
 
-p{
-    position: relative;
-    left: 30px;
-    color: rgb(84, 82, 101);
-    font-family: monospace;
-    font-size: medium;
-    top: 19px;
-}
-
-#btn{
-    position: relative;
+.icon{
     display: flex;
     flex-direction: row;
-    align-items: end;
-    right: -674px;
-    top: -356px;
+    justify-content: end;
+    flex-wrap: nowrap;
+    position: absolute;
+    margin-right:50px ;
+    top: 9px;
+    right: -37px;
 }
+#insta, #ln, #mail{
+    font-size: 25px;
+    margin-right: 16px;
+    color: rgb(92, 177, 180);
+}
+
+
+
+

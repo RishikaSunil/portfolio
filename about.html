@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body{
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            padding: 0px;
+            margin: 0px;
+        }
+        .about{
+            background-color: white;
+        padding: 20px;
+        border: 2px solid rgb(156, 154, 154);
+        box-shadow: 0px 0px 100px rgba(43, 40, 40, 0.1);
+        width: 70%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        position: relative;
+        }
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(156, 154, 154);
+        }
+        #name{
+            color: rgb(86, 86, 136);
+            font-size: small;
+            position: relative;
+            top: -14px;
+        }
+        .link{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            top: -40.5px;
+            left: 29px;
+            font-family: monospace;
+
+        }
+        .link>a{
+            text-decoration: none;
+            margin-right: 50px;
+            color: rgb(92, 177, 180);
+            font-size: medium;
+        }
+
+        a:hover{
+            color: rgb(13, 8, 30);
+        }
+        a.selected{
+            font-weight: bold;
+            color: rgb(13, 8, 30);
+        }
+        /* .icon a:hover {
+            color: rgb(13, 8, 30);
+    } */
+    /* .icon a:hover i {
+        color: rgb(13, 8, 30);
+        cursor: pointer;
+    } */
+    a>i:hover {
+        color: rgb(13, 8, 30);
+    }
+
+
+        .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: nowrap;
+    position: absolute;
+    margin-right:50px ;
+    top: 9px;
+    right: -37px;
+}
+#insta, #ln, #mail{
+    font-size: 25px;
+    margin-right: 16px;
+    color: rgb(92, 177, 180);
+}
+        p{
+            font-family: monospace;
+            color:  rgb(65, 146, 149);
+            font-weight: bold;
+            font-size: large;
+        }
+        h2{
+            color: rgb(84, 82, 101);
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: larger;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="about">
+        <h3 id="name">Rishika.</h3>
+        <div class="link">
+            <a href="./index.html"><strong>Home</strong></a>
+            <a href="./about.html" class="selected"><strong>About</strong></a>
+            <a href="./skills.html"><strong>Skills</strong></a>
+            <!-- <a href="#"><strong>Education</strong></a> -->
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/rishika?utm_source=qr&igsh=MXhjcWFjc21laTZ2Mg=="><i class="fab fa-instagram" id="insta"></i></a>
+            <a href="https://www.linkedin.com/in/rishika-p-821498305"><i class="fab fa-linkedin" id="ln"></i></a>
+            <a href="mailto:rishikasunil24@gmail.com"><i class="fas fa-envelope" id="mail"></i></a>
+        </div>
+        <div>
+            <h2>ABOUT ME</h2>
+            <p>Hi, I'm Rishika 👋🏻, a passionate full-stack developer with a knack for turning ideas into digital solutions. With a focus on both front-end and back-end development, I thrive on the thrill of solving problems and building user-centric experiences that make a difference.
+            I specialize in harnessing the power of Python to architect efficient, performant back-end systems.
+                From crafting elegant user interfaces with HTML, CSS, and JavaScript to architecting scalable back-end systems with technologies like Django and MySQL, I'm dedicated to delivering high-quality solutions that exceed expectations.
+            </P>
+            <h2>LET'S CONNECT</h2>
+            <p>
+                I'm excited about the opportunity to work on exciting projects and collaborate with like-minded individuals. If you're looking for a full-stack developer who's ready to dive in and make an impact, let's connect! Feel free to reach out via [instagram/LinkedIn/email],and let's turn your ideas into reality together.
+
+            </p>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

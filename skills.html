@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body{
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            padding: 0px;
+            margin: 0px;
+        }
+        .mainlist{
+            background-color: white;
+        padding: 20px;
+        border: 2px solid rgb(156, 154, 154);
+        box-shadow: 0px 0px 100px rgba(43, 40, 40, 0.1);
+        width: 70%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        position: relative;
+        }
+
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: -43px;
+            /* margin-left: 219px; */
+
+        }
+        #fe>h2, #be>h2,#as>h2{
+        font-size: xx-large;
+        color: rgb(84, 82, 101);
+        font-family: monospace;
+        
+        }
+
+
+        li{
+            color:  rgb(65, 146, 149);
+            font-weight: bold;
+            font-size: larger;
+            font-family: monospace;
+        }
+        .mainlist::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(156, 154, 154);
+        }
+        #name{
+            color: rgb(86, 86, 136);
+            font-size: small;
+            position: relative;
+            top: -14px;
+        }
+
+        .link{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            top: -40.5px;
+            left: 29px;
+            font-family: monospace;
+
+        }
+        .link>a{
+            text-decoration: none;
+            margin-right: 50px;
+            color: rgb(92, 177, 180);
+            font-size: medium;
+        }
+
+        a:hover{
+            color: rgb(13, 8, 30);
+        }
+        a.selected{
+            font-weight: bold;
+            color: rgb(13, 8, 30);
+        }
+        .icon a:hover {
+            color: rgb(13, 8, 30);
+    }
+
+        .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: nowrap;
+    position: absolute;
+    margin-right:50px ;
+    top: 9px;
+    right: -37px;
+}
+#insta, #ln, #mail{
+    font-size: 25px;
+    margin-right: 16px;
+    color: rgb(92, 177, 180);
+
+}
+        
+    </style>
+
+</head>
+<body>
+    <div class="mainlist">
+        <h3 id="name">Rishika.</h3>
+        <div class="link">
+            <a href="./index.html"><strong>Home</strong></a>
+            <a href="./about.html"><strong>About</strong></a>
+            <a href="./skills.html" class="selected"><strong>Skills</strong></a>
+            <!-- <a href="#"><strong>Education</strong></a> -->
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/rishika?utm_source=qr&igsh=MXhjcWFjc21laTZ2Mg=="><i class="fab fa-instagram" id="insta"></i></a>
+            <a href="https://www.linkedin.com/in/rishika-p-821498305"><i class="fab fa-linkedin" id="ln"></i></a>
+            <a href="mailto:rishikasunil24@gmail.com"><i class="fas fa-envelope" id="mail"></i></a>
+        </div>
+        <div class="list">
+        <ul id="fe" class="list2">
+            <h2><strong>Front-End Development</strong></h2>               
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>Javascript(Angukar)</li>
+        </ul>
+        <ul id="be" class="list2">
+            <h2><strong>Back-End Development</strong></h2>
+            <li>Python(Django)</li>
+            <li>MySQL</li>
+        </ul>
+        <ul id="as" class="list2">
+            <h2>Additional Skills</h2>
+            <li>Problem-Solving skills</li>
+            <li>Creativity</li>
+            <li>Time management</li>
+            <li>Effective communication and teamwork</li>
+        </ul>           
+        </div>
+
+    </div>
+    
+</body>
+</html>
