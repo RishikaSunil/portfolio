@@ -13,7 +13,7 @@
             padding: 0px;
             margin: 0px;
         }
-        .about{
+        .con{
             background-color: white;
         padding: 20px;
         border: 2px solid rgb(156, 154, 154);
@@ -26,7 +26,7 @@
         border-radius: 20px;
         position: relative;
         }
-        .about::before {
+        .con::before {
             content: '';
             position: absolute;
             top: 40px;
@@ -41,6 +41,7 @@
             position: relative;
             top: -14px;
         }
+
         .link{
             position: relative;
             display: flex;
@@ -50,8 +51,8 @@
             top: -40.5px;
             left: 29px;
             font-family: monospace;
-
         }
+
         .link>a{
             text-decoration: none;
             margin-right: 50px;
@@ -66,9 +67,7 @@
             font-weight: bold;
             color: rgb(13, 8, 30);
         }
-
-
-
+        
         .icon{
             display: flex;
             flex-direction: row;
@@ -83,24 +82,43 @@
             font-size: 25px;
             margin-right: 16px;
             color: rgb(92, 177, 180);
-        }      
-        p{
-            font-family: monospace;
-            color:  rgb(65, 146, 149);
-            font-weight: bold;
-            font-size: large;
-            margin-bottom: 5px;
-            line-height: 25px;
         }
-        h2{
+        h1{
             color: rgb(84, 82, 101);
             font-family: monospace;
-            font-weight: bolder;
-            font-size: xx-large;
+            font-size: xxx-large;
+        }
+        #h1{
             display: flex;
             justify-content: center;
+            position: relative;
+            top: -40px;
         }
-        #cv{
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -35px;
+        }
+        input{
+            padding: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            border-radius: 5px;
+            background-color: rgb(176, 221, 222);
+            border: 1px solid rgb(104, 174, 175);
+        }
+        textarea{
+            border-radius: 5px;
+            border: 1px solid rgb(104, 174, 175);
+            padding: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            background-color: rgb(176, 221, 222);
+        }
+        button{
             font-family: monospace;
             background-color: rgb(104, 174, 175);
             padding: 5px;
@@ -108,45 +126,53 @@
             border-radius: 5px;
             border: none;
             color: white;
-            width: 113px;
-            height: 20px;
+            width: 74px;
+            font-size: 15px;
+            border: 1px solid rgb(30, 151, 153);
+        }
+        /* #button{
+            font-family: monospace;
+            background-color: rgb(104, 174, 175);
+            padding: 5px;
+            margin-top: 17px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            width: 74px;
             font-size: 15px;
             border: 1px solid rgb(30, 151, 153);
             text-align: center;
             text-decoration: none;
-            display: flex;
-            position: relative;
-        }
-        i{
-            margin-right: 6px;
+        } */
+        ::placeholder{
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="about">
+    <div class="con">
         <h3 id="name">Rishika.</h3>
         <div class="link">
             <a href="./index.html"><strong>Home</strong></a>
-            <a href="./about.html" class="selected"><strong>About</strong></a>
+            <a href="./about.html"><strong>About</strong></a>
             <a href="./skills.html"><strong>Skills</strong></a>
-            <a href="./contact.html"><strong>Contact</strong></a>
+            <a href="./contact.html" class="selected"><strong>Contact</strong></a>
         </div>
         <div class="icon">
             <a href="https://www.instagram.com/rishika?utm_source=qr&igsh=MXhjcWFjc21laTZ2Mg=="><i class="fab fa-instagram" id="insta"></i></a>
             <a href="https://www.linkedin.com/in/rishika-p-821498305"><i class="fab fa-linkedin" id="ln"></i></a>
             <a href="mailto:rishikasunil24@gmail.com"><i class="fas fa-envelope" id="mail"></i></a>
         </div>
-        <div>
-            <h2>ABOUT ME</h2>
-            <p>Hi, I'm Rishika 👋🏻, a passionate full-stack developer with a knack for turning ideas into digital solutions.
-            I specialize in harnessing the power of Python to architect efficient, performant back-end systems.
-                From crafting elegant user interfaces with HTML, CSS, and JavaScript to architecting scalable back-end systems with technologies like Django and MySQL, I'm dedicated to delivering high-quality solutions that exceed expectations.
-            </P>
+        <div id="h1">
+            <h1>LET'S CONNECT</h1>
         </div>
-        <div>
-            <a href="./Resume.pdf" download="Resume.pdf" id="cv"><i class="fa fa-download"></i>DOWNLOAD CV</a>
-        </div>
-    
+        <form action="">
+            <input type="text" placeholder="Your Name*" required><br>
+            <input type="email" placeholder="Your Email id*" required><br>
+            <input type="text" placeholder="Subject"><br>
+            <textarea name="text" cols="30" rows="7" placeholder="Your message"></textarea>       
+            <button type="submit">Send</button>
+        </form> 
     </div>
     
 </body>
